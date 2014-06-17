@@ -72,7 +72,7 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p1[] = {
 	{ 0 }
 };
 
-static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p2[] = {
+/*static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p2[] = {
 	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,   0, 5 },
 	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,   0, 5 },
 	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
@@ -81,9 +81,20 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p2[] = {
 	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 8 },
 	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 8 },
 	{ 0 }
+};*/
+
+static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p2[] = {
+	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,   0, 5 },
+	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,   0, 6 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 7 },
+	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 8 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 0 }
 };
 
-static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p4[] = {
+/*static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p4[] = {
 	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,   0, 5 },
 	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,   0, 5 },
 	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
@@ -95,21 +106,51 @@ static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p4[] = {
 	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 8 },
 	{ 1, 1401600, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 8 },
 	{ 0 }
+};*/
+
+static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p4[] = {
+	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,   0, 5 },
+	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,   0, 6 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 7 },
+	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 8 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1305600, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 1, 1401600, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
+	{ 0 }
 };
 
-static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p6[] = {
-	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,    0, 5 },
-	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,    0, 5 },
-	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4, 0, 6 },
-	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4, 0, 7 },
-	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,  0, 8 },
-	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,  0, 8 },
-	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_7,  0, 8 },
-	{ 1, 1305600, ACPUPLL, 5, 0,   CPR_CORNER_8,  0, 8 },
-	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_9,  0, 8 },
+/*static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p6[] = {
+	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,   0, 5 },
+	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,   0, 5 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 6 },
+	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 7 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,   0, 8 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,   0, 8 },
+	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_7,   0, 8 },
+	{ 1, 1305600, ACPUPLL, 5, 0,   CPR_CORNER_8,   0, 8 },
+	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_9,   0, 8 },
 	{ 1, 1401600, ACPUPLL, 5, 0,   CPR_CORNER_10,  0, 8 },
 	{ 1, 1497600, ACPUPLL, 5, 0,   CPR_CORNER_11,  0, 8 },
 	{ 1, 1593600, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 8 },
+	{ 0 }
+};*/
+
+static struct clkctl_acpu_speed acpu_freq_tbl_8226_1p6[] = {
+	{ 1,  300000, PLL0,    4, 2,   CPR_CORNER_2,   0, 5 },
+	{ 1,  384000, ACPUPLL, 5, 2,   CPR_CORNER_2,   0, 6 },
+	{ 1,  600000, PLL0,    4, 0,   CPR_CORNER_4,   0, 7 },
+	{ 1,  787200, ACPUPLL, 5, 0,   CPR_CORNER_4,   0, 8 },
+	{ 1,  998400, ACPUPLL, 5, 0,   CPR_CORNER_5,   0, 9 },
+	{ 1, 1094400, ACPUPLL, 5, 0,   CPR_CORNER_6,   0, 9 },
+	{ 1, 1190400, ACPUPLL, 5, 0,   CPR_CORNER_7,   0, 9 },
+	{ 1, 1305600, ACPUPLL, 5, 0,   CPR_CORNER_8,   0, 9 },
+	{ 1, 1344000, ACPUPLL, 5, 0,   CPR_CORNER_9,   0, 9 },
+	{ 1, 1401600, ACPUPLL, 5, 0,   CPR_CORNER_10,  0, 9 },
+	{ 1, 1497600, ACPUPLL, 5, 0,   CPR_CORNER_11,  0, 9 },
+	{ 1, 1593600, ACPUPLL, 5, 0,   CPR_CORNER_12,  0, 9 },
 	{ 0 }
 };
 
